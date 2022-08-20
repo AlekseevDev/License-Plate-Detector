@@ -26,5 +26,5 @@ After success, we should have a folder **result_images** in the same directory i
 \
 \
 \
-_Be sure to try to study the code and change it to understand how it all works._
+_Be sure to try to study the code and change it to understand how it all works._\
 🌟 *Do not spare the stars if it helped you or became useful for you! Thank you.*
