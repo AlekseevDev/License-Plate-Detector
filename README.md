@@ -1,15 +1,30 @@
-# Детектор российских автомобильных номеров на фото
-_Используемые библиотеки:_
-* OpenCV - import cv2 (для работы с изображением)
-* os - import os (для создания папок и работы с файлами)
-* TKinter - import tkinter (для создания графического интерфейса)
+# Photo license plate detector 🕵🏻
 
-_Как работает программа?_
+![python](https://img.shields.io/badge/4.6.0-opencv-green?logo=opencv&logoColor=white)
+![python](https://img.shields.io/badge/3.9.x-python-blue?logo=python&logoColor=white)
 
-Все очень просто! (Метод Виолы–Джонса использующий прямоугольные примитивы. Для поиска объекта на цифровом изображении используется обученный классификатор, представленный в формате xml. Классификатор формируется на примитивах Хаара. На основе этого базиса строится каскад классификаторов, принимающих решение о том, распознан объект на изображении или нет.)  
+## Overview
 
-У нас есть заготовленный хаар каскад, мы подгружаем фото с помощью граф. инт. (на базе tkinter), работаем с ним (меняем цвет/изменяем), и передаем в каскад, он зачастую находит номер и передает координаты, по ним мы строим прямоугольник синего цета, а потом сохраняем все в папку "detecting_result" и выводим фото на экран, чтобы сразу увидеть результат :)
+Viola-Jones method using rectangular primitives. To search for an object in a digital image, a trained classifier is used, presented in xml format. The classifier is formed on Haar primitives. Based on this basis, a cascade of classifiers is built that decides whether an object is recognized in the image or not. More details can be read [here](https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html).
 
+## Quick Start
 
+After cloning the repository, go to the project folder.\
+Before you start, make sure you have the correct version of python installed by typing the command in the terminal
 
-***Так же, чтобы после клонирования репозитория, мы могли сразу убедиться в работоспособности кода,я добавил пробные фото в папку "plates", выбрал их случайным образом!***
+`python3 --version`
+
+Next, install the necessary libraries by typing the following command
+
+`pip3 install -r requirements.txt`
+
+And finally, let's run our script on test images
+
+`python3 main.py`
+
+After success, we should have a folder **result_images** in the same directory in which our processed images are located.
+\
+\
+\
+_Be sure to try to study the code and change it to understand how it all works._
+🌟 *Do not spare the stars if it helped you or became useful for you! Thank you.*
