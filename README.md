@@ -16,7 +16,7 @@ Before you start, make sure you have the correct version of python installed by 
 
 Next, install the necessary libraries by typing the following command
 
-`pip3 install -r requirements.txt`
+`pip3 install -U -r requirements.txt`
 
 And finally, let's run our script on test images
 
